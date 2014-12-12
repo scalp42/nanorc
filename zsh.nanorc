@@ -1,5 +1,6 @@
 ## Syntax highlighting for ZSH scripts (initially copied from sh.nanorc)
-syntax "ZSH" "\.zsh$" "\.?(zshenv|zprofile|zshrc|zlogin|zlogout|zsh-theme)$"
+#syntax "zsh" "\.?zsh[^\.]+?$"
+syntax "zs" "\.?zsh\.+?$"
 header "^#!.*/(env +)?zsh( |$)"
 
 ## Numbers
@@ -25,7 +26,7 @@ color brightmagenta "\<((g|ig)?awk|find|diff|\w{0,4}grep|kill|killall|\w{0,4}les
 color brightmagenta "\<(base(32|64)|basename|cat|chcon|chgrp|chmod|chown|chroot|cksum|comm|cp|csplit|cut|date|dd|df|dir|dircolors|dirname|du|echo|env|expand|expr|factor|false|fmt|fold|head|hostid|id|install|join|link|ln|logname|ls|md5sum|mkdir|mkfifo|mknod|mktemp|mv|nice|nl|nohup|nproc|numfmt|od|paste|pathchk|pinky|pr|printenv|ptx|pwd|readlink|realpath|rm|rmdir|runcon|seq|(sha1|sha224|sha256|sha384|sha512)sum|shred|shuf|sleep|sort|split|stat|stdbuf|stty|sum|sync|tac|tail|tee|test|timeout|touch|tr|true|truncate|tsort|tty|uname|unexpand|uniq|unlink|users|vdir|wc|who|whoami|yes)\>"
 
 ## Function definition
-icolor brightgreen "^\s+(function\s+)[0-9A-Z_]+\s+\(\)"
+#icolor brightgreen "^\s+?(function\s+)?[0-9A-Z_]+\s+?\(\)"
 
 ## Variables
 icolor brightred "\$\{?[0-9A-Z_!@#$*?-]+\}?"
