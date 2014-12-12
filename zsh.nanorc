@@ -1,6 +1,6 @@
 ## Syntax highlighting for ZSH scripts (initially copied from sh.nanorc)
 #syntax "zsh" "\.?zsh[^\.]+?$"
-syntax "zs" "\.?zsh\.+?$"
+syntax "zs" "\.zsh\.+$"
 header "^#!.*/(env +)?zsh( |$)"
 
 ## Numbers
