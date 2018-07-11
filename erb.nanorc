@@ -4,7 +4,7 @@
 ##
 ## https://github.com/geomic/ERB-And-More-Code-Highlighting-for-nano
 
-syntax "erb" "\.erb$" "\.rhtml$"
+syntax "ERB" "\.erb$" "\.rhtml$"
 color blue start="<" end=">"
 color white start="<%" end="%>"
 color red "&[^;[[:space:]]]*;"
@@ -22,3 +22,5 @@ color brightcyan "##[^{].*$" "##$"
 color green start="<<-?'?EOT'?" end="^EOT"
 color brightcyan "(XXX|TODO|FIXME|\?\?\?)"
 
+## Trailing spaces
+color ,green "[[:space:]]+$"
