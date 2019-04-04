@@ -56,7 +56,7 @@ set constantshow
 # set quickblank
 
 ## Use cut to end of line with ^K by default
-set cut
+set cutfromcursor
 
 ## Enable ~/.nano_history for saving and reading search/replace strings.
 set historylog
