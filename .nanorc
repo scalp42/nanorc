@@ -79,6 +79,10 @@ set historylog
 ## Don't wrap text at all
 # set nowrap
 
+set breaklonglines
+set atblanks
+set softwrap
+
 ## Set operating directory.  nano will not read or write files outside
 ## this directory and its subdirectories.  Also, the current directory
 ## is changed to here, so files are inserted from this dir.  A blank
